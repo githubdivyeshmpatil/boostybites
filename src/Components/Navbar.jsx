@@ -63,7 +63,10 @@ const Navbar = () => {
         }`}
       >
         <div className="p-4 flex justify-between items-center border-b">
-          <span className="text-xl font-semibold text-blue-700">Menu</span>
+          <span className="text-xl font-semibold text-blue-700">
+                      <img src={logo} alt="Logo" className="h-10 w-auto" />
+
+          </span>
           <button onClick={() => setIsOpen(false)}>
             <X className="w-6 h-6 text-gray-800" />
           </button>
