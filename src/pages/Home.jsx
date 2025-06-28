@@ -8,6 +8,7 @@ import NutraceuticalChocolates from '../Components/NutraceuticalChocolates'
 import DistributionAvailability from '../Components/DistributionAvailability'
 import FunctionalChocolateSlider from '../Components/FunctionalChocolates'
 import Navbar from '../Components/Navbar'
+import OfferChocolateSection from '../Components/OfferChocolateSection'
 
 function Home() {
   return (
@@ -52,6 +53,7 @@ function Home() {
         </div>
 
         <DistributionAvailability />
+        <OfferChocolateSection/>
       </div>
     </>
   )

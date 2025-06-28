@@ -1,16 +1,19 @@
-import React, { useState } from "react";
-import { Menu, X, Search, User } from "lucide-react";
-import { Link } from "react-router-dom"; // ✅ Imported for routing
-import logo from "../assets/images/logo.png";
+import React, { useState } from 'react';
+import { Menu, X, Search, User } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import logo from '../assets/images/logo.png';
+import PromoModal from './PromoModal'; // ✅ Adjust path if different
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   const navLinks = [
-    { label: "Home", href: "/" },
-    { label: "About", href: "/home" },
-    { label: "Services", href: "/home" },
-    { label: "Contact", href: "/contact_us" },
+    { label: 'Home', href: '/' },
+    { label: 'About', href: '/about_us' },
+    { label: 'Chocolates', href: '/chocolates' },
+    { label: 'Testimonials', href: '/testimonials' },
+    { label: 'Contact Us', href: '/contact_us' },
   ];
 
   return (
@@ -21,7 +24,7 @@ const Navbar = () => {
           <img src={logo} alt="Logo" className="h-10 w-auto" />
         </Link>
 
-        {/* ✅ Desktop Menu */}
+        {/* ✅ Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-10">
           {navLinks.map((item, idx) => (
             <Link
@@ -34,26 +37,29 @@ const Navbar = () => {
           ))}
         </nav>
 
-        {/* ✅ Search & User icons */}
+        {/* ✅ Desktop Icons */}
         <div className="hidden md:flex items-center gap-4">
           <button className="text-gray-700 hover:text-blue-600">
             <Search className="w-5 h-5" />
           </button>
-          <button className="text-gray-700 hover:text-blue-600">
+          <button
+            onClick={() => setShowModal(true)}
+            className="text-gray-700 hover:text-blue-600"
+          >
             <User className="w-5 h-5" />
           </button>
         </div>
 
-        {/* ✅ Mobile Menu Button */}
+        {/* ✅ Mobile Menu Toggle */}
         <button onClick={() => setIsOpen(true)} className="md:hidden">
           <Menu className="w-6 h-6 text-gray-800" />
         </button>
       </div>
 
-      {/* ✅ Mobile Sidebar Menu */}
+      {/* ✅ Mobile Drawer */}
       <div
         className={`fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 z-40 ${
-          isOpen ? "translate-x-0" : "-translate-x-full"
+          isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
         <div className="p-4 flex justify-between items-center border-b">
@@ -73,26 +79,34 @@ const Navbar = () => {
               {item.label}
             </Link>
           ))}
-
-          {/* ✅ Search & User in mobile view */}
+          {/* ✅ Mobile Icons */}
           <div className="flex gap-4 pt-4 border-t">
             <button className="text-gray-700 hover:text-blue-600">
               <Search className="w-5 h-5" />
             </button>
-            <button className="text-gray-700 hover:text-blue-600">
+            <button
+              onClick={() => {
+                setShowModal(true);
+                setIsOpen(false);
+              }}
+              className="text-gray-700 hover:text-blue-600"
+            >
               <User className="w-5 h-5" />
             </button>
           </div>
         </nav>
       </div>
 
-      {/* ✅ Overlay */}
+      {/* ✅ Background Overlay for Mobile Drawer */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-40 z-30"
+          className="fixed  z-30"
           onClick={() => setIsOpen(false)}
         />
       )}
+
+      {/* ✅ Promo Modal */}
+      <PromoModal isOpen={showModal} onClose={() => setShowModal(false)} />
     </header>
   );
 };

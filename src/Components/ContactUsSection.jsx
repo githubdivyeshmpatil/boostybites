@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 function ContactUsSection() {
+  useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
   return (
     <div className="w-full bg-white py-12 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">

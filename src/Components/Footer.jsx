@@ -14,7 +14,7 @@ export default function Footer() {
               placeholder="Enter your email"
               className="w-full px-4 py-2 rounded-l-md bg-white text-black border border-gray-300 focus:outline-none focus:border-pink-500 placeholder-gray-500"
             />
-            <button className="bg-[#a04120] px-5 py-2 rounded-r-md text-white">
+            <button className="bg-[#4a1c08] px-5 py-2 rounded-r-md text-white">
               Subscribe
             </button>
           </div>
@@ -78,7 +78,7 @@ export default function Footer() {
               <li><a href="#" className="hover:text-white">FAQs</a></li>
               <li><a href="#" className="hover:text-white">Shipping Policy</a></li>
               <li><a href="#" className="hover:text-white">Return Policy</a></li>
-              <li><a href="#" className="hover:text-white">Terms & Conditions</a></li>
+              <li><a href="/terms&condition" className="hover:text-white">Terms & Conditions</a></li>
             </ul>
           </div>
 
