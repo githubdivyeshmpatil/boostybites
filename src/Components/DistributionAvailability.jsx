@@ -11,10 +11,10 @@ const distributionPoints = [
 
 function DistributionAvailability() {
   return (
-    <section className="w-full bg-white py-12 px-4 md:px-8">
-      <div className="w-full md:max-w-3xl ml-8 md:ml-24 text-left">
+    <section className="w-full bg-white py-12 px-4 md:px-6 lg:px-12">
+      <div className="max-w-4xl mx-auto text-left">
         {/* Title & Intro */}
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">
           Distribution & Availability
         </h2>
         <p className="text-gray-600 mb-6">
@@ -25,7 +25,7 @@ function DistributionAvailability() {
         <ul className="space-y-4">
           {distributionPoints.map((point, index) => (
             <li key={index} className="flex items-start gap-3 text-gray-700">
-              <FaCheckCircle className="text-green-600 mt-1" />
+              <FaCheckCircle className="text-green-600 mt-1 flex-shrink-0" />
               <span>{point}</span>
             </li>
           ))}
