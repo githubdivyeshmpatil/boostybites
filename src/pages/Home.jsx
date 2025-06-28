@@ -11,30 +11,49 @@ import Navbar from '../Components/Navbar'
 
 function Home() {
   return (
-   <>
-      
+    <>
+      {/* Wrapper with responsive container and overflow-x-hidden */}
+      <div className="w-full overflow-x-hidden">
+        <Navbar />
         <ChocolateBanner />
-      
 
-      <div className="mt-6 md:mt-10 lg:mt-16">
-        <AboutCompany />
+        <div className="mt-6 md:mt-10 lg:mt-16 px-4">
+          <AboutCompany />
+        </div>
+
+        <div className="px-4">
+          <Title
+            text="The Future of Chocolate"
+            dec="Chocolate is evolving—from being just a sweet treat to becoming a functional food. Consumers today demand more from their confections: better ingredients, health benefits, ethical sourcing, and environmental responsibility."
+          />
+          <ChocolateVisionSection />
+        </div>
+
+        <div className="mt-6 md:mt-10 lg:mt-16 px-4">
+          <Title
+            text="Our chocolate products"
+            dec="Smooth, rich, and irresistible—made with natural sweeteners and premium cocoa. Available in"
+          />
+          <ChocolateSlider />
+        </div>
+
+        <div className="px-4">
+          <Title
+            text="Nutraceutical Chocolates for Kids"
+            dec="A first-of-its-kind range designed for growing children—each bar is loaded with essential nutrients."
+          />
+          <NutraceuticalChocolates />
+
+          <Title
+            text="Functional Chocolate Squares"
+            dec="Perfect for adults and fitness enthusiasts."
+          />
+          <FunctionalChocolateSlider />
+        </div>
+
+        <DistributionAvailability />
       </div>
- <Title text="The Future of Chocolate" dec="Chocolate is evolving—from being just a sweet treat to becoming a functional food. Consumers today demand more from their confections: better ingredients, health benefits, ethical sourcing, and environmental responsibility." />
-    <ChocolateVisionSection/>
-    
-      <div className="mt-6 md:mt-10 lg:mt-16">
-         <Title text="Our chocolate products" dec="Smooth, rich, and irresistible—made with natural sweeteners and premium cocoa. Available in"/>
-        <ChocolateSlider />
-      </div>
-         <Title text="Nutraceutical Chocolates for Kids" dec="A first-of-its-kind range designed for growing children—each bar is loaded with essential nutrients."/>
-
-      <NutraceuticalChocolates/>
-               <Title text="Functional Chocolate Squares" dec="Perfect for adults and fitness enthusiasts."/>
-
-      <FunctionalChocolateSlider/>
-      <DistributionAvailability/>
-   
-   </>
+    </>
   )
 }
 
