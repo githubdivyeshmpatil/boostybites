@@ -52,9 +52,9 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Menu</h3>
             <ul className="space-y-2 text-sm sm:text-base md:text-lg text-justify text-white">
               <li><a href="#" className="hover:text-white">Home</a></li>
-              <li><a href="#" className="hover:text-white">Shop</a></li>
-              <li><a href="#" className="hover:text-white">About Us</a></li>
-              <li><a href="#" className="hover:text-white">Contact</a></li>
+              <li><a href="/chocolates" className="hover:text-white">Shop</a></li>
+              <li><a href="/about_us" className="hover:text-white">About Us</a></li>
+              <li><a href="/contact_us" className="hover:text-white">Contact</a></li>
             </ul>
           </div>
 
