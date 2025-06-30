@@ -105,7 +105,7 @@ useEffect(() => {
       >
       </BackgroundSection>
     <div className="w-full flex flex-col items-center justify-center py-10 bg-white overflow-hidden">
-      <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-center">
         What Our Customers Say
       </h2>
 

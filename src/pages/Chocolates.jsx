@@ -17,7 +17,7 @@ function Chocolates() {
         className="h-[500px] p-10"
       >
       </BackgroundSection>
-       <div className="mt-6 md:mt-10 lg:mt-16 px-4">
+       <div className="mt-6 md:mt-10 lg:mt-16 ">
           <Title
             text="Our chocolate products"
             dec="Smooth, rich, and irresistible—made with natural sweeteners and premium cocoa. Available in"
@@ -25,7 +25,7 @@ function Chocolates() {
           <ChocolateSlider />
         </div>
 
-        <div className="px-4">
+        <div className="">
           <Title
             text="Nutraceutical Chocolates for Kids"
             dec="A first-of-its-kind range designed for growing children—each bar is loaded with essential nutrients."

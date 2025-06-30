@@ -11,6 +11,9 @@ import About from "./pages/About";
 import Terms from "./pages/Terms";
 import Testimonials from "./pages/Testimonials";
 import Chocolates from "./pages/Chocolates";
+import ReturnPolicy from "./pages/ReturnPolicy";
+import ShippingPolicy from "./pages/ShippingPolicy";
+import FAQ from "./pages/FAQ";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -30,6 +33,11 @@ function App() {
 
             <Route path="/terms&condition" element={<Terms />} />
             <Route path="/testimonials" element={<Testimonials />} />
+                        <Route path="/returnpolicy" element={<ReturnPolicy />} />
+                                                <Route path="/shippingpolicy" element={<ShippingPolicy />} />
+                                                <Route path="/faq" element={<FAQ />} />
+
+
           </Routes>
         </div>
       </Router>
@@ -39,3 +47,17 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
+
+
+// h1	text-3xl sm:text-4xl md:text-5xl lg:text-6xl
+// h2	text-2xl sm:text-3xl md:text-4xl lg:text-5xl
+// h3 → text-lg sm:text-xl md:text-2xl lg:text-3xl
+// h4 "text-base sm:text-lg md:text-xl lg:text-2xl font-medium
+
+// p	text-base sm:text-lg md:text-xl text-justify
+// p1 "text-sm sm:text-base md:text-lg text-justify

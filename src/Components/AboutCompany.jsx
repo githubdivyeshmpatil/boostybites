@@ -7,19 +7,19 @@ const AboutCompany = () => {
       
       {/* Text Content */}
       <div className="w-full lg:w-1/2 text-center lg:text-left">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold italic font-[cursive] text-black mb-6">
-          About Our Company
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl  font-bold italic font-[cursive] text-black mb-6">
+          About Us
         </h2>
 
-        <p className="text-gray-700 text-base sm:text-lg leading-relaxed text-justify mb-4">
+        <p className="text-gray-700 text-base sm:text-lg md:text-xl leading-relaxed text-justify mb-4">
           At <strong>Boosty Bites</strong>, we believe chocolate should not only taste divine but also nourish the body. Founded with a passion for purity and wellness, we are a next-generation chocolate manufacturing company focused on crafting premium chocolates made with natural sugars, no preservatives, and zero artificial ingredients.
         </p>
 
-        <p className="text-gray-700 text-base sm:text-lg leading-relaxed text-justify mb-4">
+        <p className="text-gray-700 text-base sm:text-lg md:text-xl leading-relaxed text-justify mb-4">
           Born from the idea that indulgence can be both guilt-free and health-positive, we create chocolates that redefine snacking, especially for health-conscious individuals and growing children. Our state-of-the-art facility is built on sustainability, quality, and innovation, ensuring every bite carries the essence of nature and nutrition.
         </p>
 
-        <p className="text-gray-700 text-base sm:text-lg leading-relaxed text-justify mb-4">
+        <p className="text-gray-700 text-base sm:text-lg md:text-xl leading-relaxed text-justify mb-4">
           We are also pioneers in nutraceutical chocolates for kids, developing functional treats that combine the joy of chocolate with the benefits of essential vitamins, minerals, and natural bioactives—supporting immunity, energy, and cognitive development in a delicious form.
         </p>
 

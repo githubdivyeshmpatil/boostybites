@@ -23,6 +23,12 @@ const chocolates = [
     price: "$6.0",
     desc: "With Green Tea Extract & Vitamin E",
     image: img3,
+  },
+   {
+    name: "Anti-Ox Squares",
+    price: "$6.0",
+    desc: "With Green Tea Extract & Vitamin E",
+    image: img3,
   }
 ];
 
@@ -94,9 +100,8 @@ function FunctionalChocolateSlider() {
                     {/* Hover Info */}
                     <div className="h-[100px] relative">
                       <div className="absolute bottom-0 left-0 w-full bg-[#421c00] text-white text-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <h3 className="font-bold text-sm">{item.name}</h3>
-                        <p className="text-xl font-bold mt-1">{item.price}</p>
-                        <p className="mt-1 text-sm tracking-wider">BUY NOW</p>
+                    <h3 className="font-bold  ">{item.name}</h3>
+                    <p className="mt-1 text-sm tracking-wider">BUY NOW</p>
                       </div>
                     </div>
                   </div>
@@ -108,19 +113,20 @@ function FunctionalChocolateSlider() {
           {/* Navigation Buttons - Hidden on small screens */}
           <div className="hidden md:flex items-center gap-6 mt-6">
             <button
-              onClick={prev}
-              className="bg-white border rounded-md p-4 shadow hover:bg-gray-100 disabled:opacity-50"
-              disabled={index === 0}
-            >
-              <FaArrowLeft className="text-orange-700" />
-            </button>
-            <button
-              onClick={next}
-              className="bg-white border rounded-md p-4 shadow hover:bg-gray-100 disabled:opacity-50"
-              disabled={index + visibleCount >= chocolates.length}
-            >
-              <FaArrowRight className="text-orange-700" />
-            </button>
+             onClick={prev}
+             className="w-24 h-12 flex items-center justify-center bg-[#4a1c08]   p-4 shadow  disabled:opacity-50"
+             disabled={index === 0}
+           >
+             <FaArrowLeft className="text-white text-xl" />
+           </button>
+           
+           <button
+             onClick={next}
+             className="w-24 h-12 flex items-center justify-center bg-[#4a1c08]  p-4 shadow  disabled:opacity-50"
+             disabled={index + visibleCount >= chocolates.length}
+           >
+             <FaArrowRight className="text-white text-xl" />
+           </button>
           </div>
         </div>
       );
