@@ -34,7 +34,7 @@ function App() {
             <Route path="/products" element={<Products />} />
 
             <Route path="/terms&condition" element={<Terms />} />
-            <Route path="/testimonials" element={<Testimonials />} />
+            <Route path="/testimonial" element={<Testimonials />} />
                         <Route path="/returnpolicy" element={<ReturnPolicy />} />
                                                 <Route path="/shippingpolicy" element={<ShippingPolicy />} />
                                                 <Route path="/faq" element={<FAQ />} />

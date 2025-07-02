@@ -32,10 +32,14 @@ function DistributionAvailability() {
         </ul>
 
         {/* Contact Info */}
-        <p className="mt-6 text-gray-800 font-medium">
-          For bulk orders, dealership opportunities, and retail partnerships, please reach out via the{" "}
-          <span className="text-blue-600 underline cursor-pointer">Contact Us</span> page.
-        </p>
+       <p className="mt-6 text-gray-800 font-medium">
+  For bulk orders, dealership opportunities, and retail partnerships, please reach out via the{" "}
+  <a href="/contact_us" className="text-blue-600 underline cursor-pointer">
+    Contact Us
+  </a>{" "}
+  page.
+</p>
+
       </div>
     </section>
   );
