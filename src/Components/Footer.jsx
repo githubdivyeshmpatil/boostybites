@@ -1,12 +1,16 @@
 import React from "react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
-
+import footerbg from '../assets/images/footerbg.png'
 export default function Footer() {
   return (
     <>
       {/* 🔶 Top Wave (like chocolate flowing down) */}
       <div className="overflow-hidden leading-none">
-        <svg viewBox="0 0 1200 100" preserveAspectRatio="none" className="w-full h-[60px] fill-[#4a1c08]">
+        <svg
+          viewBox="0 0 1200 100"
+          preserveAspectRatio="none"
+          className="w-full h-[60px] fill-[#4a1c08]"
+        >
           <path d="M0,0 C150,100 350,0 600,0 C850,0 1050,100 1200,0 L1200,100 L0,100 Z" />
         </svg>
       </div>
@@ -51,8 +55,9 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Menu</h3>
             <ul className="space-y-2 text-sm sm:text-base md:text-lg text-justify text-white">
-              <li><a href="#" className="hover:text-white">Home</a></li>
-              <li><a href="/chocolates" className="hover:text-white">Shop</a></li>
+              <li><a href="/" className="hover:text-white">Home</a></li>
+               <li><a href="/about_us" className="hover:text-white">About Us</a></li>
+              <li><a href="/products" className="hover:text-white">Products</a></li>
               <li><a href="/about_us" className="hover:text-white">About Us</a></li>
               <li><a href="/contact_us" className="hover:text-white">Contact</a></li>
             </ul>
@@ -70,37 +75,49 @@ export default function Footer() {
           </div>
 
           {/* Contact Info */}
-        <div>
-  <h3 className="text-lg font-semibold mb-4 text-white">Contact Us</h3>
-  <div className="space-y-4 text-sm sm:text-base md:text-lg text-white">
-    {/* 📍 Corporate Office */}
-    <div>
-      <span className="inline-block font-medium">📍 Corporate Office:</span>
-      <div className="ml-6">
-        123 Cocoa Street, Chocolate City, Maharashtra, 400001, India
-      </div>
-    </div>
+          <div>
+            <h3 className="text-lg font-semibold mb-4 text-white">Contact Us</h3>
+            <div className="space-y-4 text-sm sm:text-base md:text-lg text-white">
+              {/* 📍 Corporate Office */}
+              <div>
+                <span className="inline-block font-medium">📍 Corporate Office:</span>
+                <div className="ml-6">
+                  123 Cocoa Street, Chocolate City, Maharashtra, 400001, India
+                </div>
+              </div>
 
-    {/* 📞 Phone */}
-    <div>
-      <span className="inline-block font-medium">📞 Phone:</span>
-      <div className="ml-6">+91-9876543210</div>
-    </div>
+              {/* 📞 Phone */}
+              <div>
+                <span className="inline-block font-medium">📞 Phone:</span>
+                <div className="ml-6">+91-9876543210</div>
+              </div>
 
-    {/* 📧 Email */}
-    <div>
-      <span className="inline-block font-medium">📧 Email:</span>
-      <div className="ml-6">hello@chocolateco.com</div>
-    </div>
+              {/* 📧 Email */}
+              <div>
+                <span className="inline-block font-medium">📧 Email:</span>
+                <div className="ml-6">hello@chocolateco.com</div>
+              </div>
 
-    {/* 🌐 Website */}
-    <div>
-      <span className="inline-block font-medium">🌐 Website:</span>
-      <div className="ml-6">www.chocolateco.com</div>
-    </div>
-  </div>
+              {/* 🌐 Website */}
+              <div>
+                <span className="inline-block font-medium">🌐 Website:</span>
+                <div className="ml-6">www.chocolateco.com</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      {/* 🔻 Center Image (Responsive Logo) */}
+<div className="w-full flex justify-center ">
+  <img
+    src={footerbg} // 🔁 Replace with your actual image path
+    alt="Boosty Bites Logo"
+    className="w-60 md:w-80 lg:w-96 object-contain"
+  />
 </div>
-</div>
+
+
+
         {/* Copyright */}
         <div className="border-t border-white text-center py-4 text-sm text-white">
           &copy; 2025 Boosty Bites. All rights reserved.

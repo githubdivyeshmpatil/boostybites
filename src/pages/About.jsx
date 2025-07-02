@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import BackgroundSection from '../Components/BackgroundSection'
-import aboutbg from '../assets/images/boostybites_choco.png'
+import aboutbg from '../assets/images/boostybites_choco_blue.png'
 import AboutCompany from '../Components/AboutCompany'
 
 function About() {
