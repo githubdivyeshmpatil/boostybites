@@ -14,6 +14,7 @@ import Chocolates from "./pages/Chocolates";
 import ReturnPolicy from "./pages/ReturnPolicy";
 import ShippingPolicy from "./pages/ShippingPolicy";
 import FAQ from "./pages/FAQ";
+import Products from "./pages/Products";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -30,6 +31,7 @@ function App() {
             <Route path="/contact_us" element={<ContactUsSection />} />
             <Route path="/about_us" element={<About />} />
             <Route path="/chocolates" element={<Chocolates />} />
+            <Route path="/products" element={<Products />} />
 
             <Route path="/terms&condition" element={<Terms />} />
             <Route path="/testimonials" element={<Testimonials />} />
