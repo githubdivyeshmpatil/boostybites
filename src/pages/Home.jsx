@@ -16,7 +16,7 @@ function Home() {
     <>
       {/* ✅ SEO Helmet Meta Tags */}
       <Helmet>
-        <title>Boosty Bites | Premium Functional & Nutraceutical Chocolates</title>
+        <title>Boosty Bites premium chocolate</title>
         <meta
           name="description"
           content="Boosty Bites offers premium functional and nutraceutical chocolates for kids and adults. Explore delicious and nutritious chocolates made with love and science."
